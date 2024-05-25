@@ -205,8 +205,8 @@ class _DraggableCardState extends State<DraggableCard>
   }
 
   void _onPanUpdate(DragUpdateDetails details) {
-    final isInLeftRegion = (cardOffset!.dx / context.size!.width) < -0.45;
-    final isInRightRegion = (cardOffset!.dx / context.size!.width) > 0.45;
+    // final isInLeftRegion = (cardOffset!.dx / context.size!.width) < -0.45;
+    final isInRightRegion = (cardOffset!.dx / context.size!.width) > 0.18;
     final isInTopRegion = (cardOffset!.dy / context.size!.height) < -0.40;
 
     setState(() {
